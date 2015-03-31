@@ -1,0 +1,21 @@
+﻿<UserControl
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:es="clr-namespace:Microsoft.Expression.Shapes;assembly=Microsoft.Expression.Drawing" x:Name="userControl" x:Class="PhoneApp6.ArcControl"
+    mc:Ignorable="d"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    d:DesignHeight="214.925" d:DesignWidth="214.925">
+    
+	<Grid x:Name="LayoutRoot">
+
+		<es:Arc x:Name="Arc_to_Rotate" ArcThickness="0" ArcThicknessUnit="Pixel" EndAngle="360" Fill="#FF7BC13C" HorizontalAlignment="Left" Height="180.597" Margin="16.418,17.91,0,0" Stretch="None" Stroke="{Binding ArcColor, ElementName=userControl}" StartAngle="0" UseLayoutRounding="False" VerticalAlignment="Top" Width="180.597" StrokeThickness="18"/>
+		<es:Arc ArcThickness="0" ArcThicknessUnit="Pixel" EndAngle="360" HorizontalAlignment="Left" Height="214.925" Stretch="None" Stroke="#FF3C3D3E" StrokeThickness="6" StartAngle="0" UseLayoutRounding="False" VerticalAlignment="Top" Width="214.925"/>
+		<TextBlock x:Name="tbl_Percentage" HorizontalAlignment="Left" Height="78" Margin="50,72,0,0" TextWrapping="Wrap" Text="{Binding Percentage, ElementName=userControl}" VerticalAlignment="Top" Width="85" FontSize="53.333"/>
+		<TextBlock HorizontalAlignment="Left" Height="31" Margin="134.597,100.567,0,0" TextWrapping="Wrap" Text="%" VerticalAlignment="Top" Width="27" FontSize="26.667"/>
+
+	</Grid>
+</UserControl>
